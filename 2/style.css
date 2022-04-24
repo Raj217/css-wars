@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.visualizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.visualizer .bar {
+  height: 200px;
+  width: 14px;
+  border-radius: 10px;
+  margin-left: 30px;
+  background-color: yellow;
+}
+
+.visualizer .bar1 {
+  animation: pulse 350ms infinite alternate ease-in-out;
+}
+.visualizer .bar2 {
+  animation: pulse 350ms infinite alternate 175ms ease-in-out;
+}
+.visualizer .bar3 {
+  animation: pulse 350ms infinite alternate ease-in-out;
+}
+.visualizer .bar4 {
+  animation: pulse 350ms infinite alternate 175ms ease-in-out;
+}
+.visualizer .bar5 {
+  animation: pulse 350ms infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: yellow;
+    transform: scaleY(100%);
+  }
+  100% {
+    background-color: rgb(6, 243, 6);
+    transform: scaleY(20%);
+  }
+}
